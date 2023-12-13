@@ -13,6 +13,7 @@ class Webpage(models.Model):
     topic_name=models.ForeignKey(Topic,on_delete=models.CASCADE)
     name=models.CharField(max_length=100)
     url=models.URLField()
+    email=models.EmailField(default='indian@gamil.com')
 
 
     def __str__ (self):
